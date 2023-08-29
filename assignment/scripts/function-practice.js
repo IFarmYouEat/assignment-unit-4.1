@@ -39,8 +39,12 @@ function multiplyThree(firstNumber, secondNumber, thirdNumber) {
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
+    console.log("The number is positive.");
     return true;
-  }else return false;
+  }else{
+    console.log("The number is zero or negative.")
+    return false;
+  } 
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -49,7 +53,11 @@ function isPositive(number) {
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-
+    if(array.length === 0){
+      return 'undefined';
+    }else{
+      return array[array.length - 1];
+    }
 }
 
 // 7. Function to find a value in an array. Return true if the 
